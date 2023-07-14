@@ -7,3 +7,61 @@ Question: Write a method to check if a given string is an anagram of another str
 5. Check if the sorted strings are equal to each other.
 6. If the sorted strings are equal, return true; otherwise, return false.
 7. Consider edge cases such as empty strings or strings of different lengths.
+
+
+
+Answer:
+
+// method to check whether two strings are anagram of each other
+    function areAnagram(string1,string2)
+    {
+        // remove other characters
+        let str1 = string1.replace(/[^a-zA-Z0-9]/g, '');
+        let str2 = string2.replace(/[^a-zA-Z0-9]/g, '');
+
+        // Convert both strings to lowercase to make this case insensitive.
+        str1 = str1.toLowerCase();
+        str2 = str2.toLowerCase();
+
+        // convert string to array
+        str1 = str1.split("");
+        str2 = str2.split("");
+
+        // Get lengths of both strings
+        let n1 = str1.length;
+        let n2 = str2.length;
+   
+        // If length of both strings is not same, then return false
+        if (n1 != n2)
+            return false;
+
+        // check if length of any == 0
+        if (n1 == 0 || n2 == 0)
+            return false;
+
+        // Sort both strings
+        str1.sort();
+        str2.sort()
+   
+        // Compare sorted strings
+        for (let i = 0; i < n1; i++)
+            if (str1[i] != str2[i])
+                return false;
+   
+        // if no false conditions satisfy, then true
+        return true;
+    }
+     
+  // Main Code
+
+    let str1="listen";
+    let str2="silent";
+     
+    if (areAnagram(str1, str2)) {
+        console.log("True")
+    }
+    else{
+        console.log("False")
+    }
+ 
+ 
