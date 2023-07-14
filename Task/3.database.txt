@@ -10,3 +10,12 @@ Instructions:
 6. Exclude customers who have not placed any orders from the result.
 7. Sort the result in descending order based on the total_purchase_amount.
 8. Limit the result to the top 5 customers only.
+
+Answer:
+SELECT c.customer_id, c.customer_name, COUNT(o.order_id) AS order_count, 
+SUM(o.purchase_amount) AS total_purchase_amount FROM customers c
+INNER JOIN orders o ON c.customer_id = o.customer_id
+GROUP BY c.customer_id, c.customer_name
+HAVING COUNT(o.order_id) > 0
+ORDER BY total_purchase_amount DESC
+LIMIT 5;
