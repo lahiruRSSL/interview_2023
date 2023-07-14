@@ -1,0 +1,14 @@
+1. Create a angular application
+2. Create a base page
+3. Install prime ng (https://www.primefaces.org/primeng/) 
+4. Create a form with below fields 
+    - username 
+    - email
+    - profile image (use file upload) 
+    - button (submit)
+5. Update the inputs with below conditions
+    - username is required
+    - email is required and must be a valid email address
+    - profile image accept only an image with max size 5 MB)
+    - submit button should enable only after valid inputs
+6. Show error messages if above scenarios failed

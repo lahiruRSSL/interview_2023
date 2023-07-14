@@ -1,0 +1,9 @@
+Question: Write a method to check if a given string is an anagram of another string.
+
+1. Implement a method named isAnagram that takes two strings as input.
+2. Within the method, remove all non-alphanumeric characters from both input strings (e.g., spaces, punctuation marks).
+3. Convert both strings to lowercase to make the anagram check case-insensitive.
+4. Sort the characters in both strings alphabetically.
+5. Check if the sorted strings are equal to each other.
+6. If the sorted strings are equal, return true; otherwise, return false.
+7. Consider edge cases such as empty strings or strings of different lengths.

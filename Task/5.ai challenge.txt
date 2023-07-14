@@ -1,0 +1,9 @@
+Implement a sentiment analysis function to classify text as positive, negative, or neutral.
+
+1. Implement a function named sentimentAnalysis that takes a text input as a parameter.
+2. Use a pre-trained sentiment analysis model or library (e.g., Natural Language Toolkit - NLTK) to perform sentiment analysis on the input text.
+3. Classify the sentiment of the text as positive, negative, or neutral.
+4. Return the sentiment classification as the output of the function.
+5. Test the function with different text inputs to ensure it provides accurate sentiment analysis results.
+
+Your task is to implement the sentimentAnalysis function that performs sentiment analysis on text and classifies it as positive, negative, or neutral. You may use any technology and language for the implementation. 

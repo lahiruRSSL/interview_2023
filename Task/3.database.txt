@@ -1,0 +1,12 @@
+Question: Write an SQL query to identify the top 5 customers with the highest total purchase amounts and the number of orders they have placed. Exclude customers who have not placed any orders. Sort the result in descending order based on the total purchase amount.
+
+Instructions:
+
+1. Consider a database schema with two tables: "customers" and "orders".
+2. The "customers" table has the following columns: customer_id (unique identifier), customer_name (name of the customer), and other relevant columns.
+3. The "orders" table has the following columns: order_id (unique identifier), customer_id (foreign key referencing the customer_id in the "customers" table), purchase_amount (amount spent on the order), and other relevant columns.
+4. Write an SQL query to retrieve the top 5 customers who have made the highest total purchase amounts.
+5. The result should include the following columns: customer_id, customer_name, order_count (number of orders placed by the customer), and total_purchase_amount (the sum of purchase amounts for all orders placed by the customer).
+6. Exclude customers who have not placed any orders from the result.
+7. Sort the result in descending order based on the total_purchase_amount.
+8. Limit the result to the top 5 customers only.

@@ -1,0 +1,12 @@
+1. Create a new Node.js project and set up a basic project structure.
+
+2. Implement an HTTP server using any Node.js framework of your choice (e.g., Express.js).
+
+3. Add endpoints for each of the following HTTP verbs: GET, POST, PUT, PATCH, and DELETE. Each   endpoint should respond with a JSON object containing relevant information (e.g., status, message).
+
+4. Implement a separate GET API endpoint (/external-data) that fetches data from https://jsonplaceholder.typicode.com/posts and returns the response to the client. Handle any necessary error cases appropriately.
+
+5. Ensure that your code is well-organized, readable, and follows best practices. Consider using appropriate middleware, error handling, and modularization.
+Your task is to create a Node.js application that fulfills the requirements mentioned above. 
+
+6. Commit your changes to the GIT branch and add a PR
