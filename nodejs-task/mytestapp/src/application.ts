@@ -9,6 +9,7 @@ import {RestApplication} from '@loopback/rest';
 import {ServiceMixin} from '@loopback/service-proxy';
 import path from 'path';
 import {MySequence} from './sequence';
+import {GetExternalDataService} from './services/get-external-data.service';
 
 export {ApplicationConfig};
 
@@ -40,5 +41,7 @@ export class MytestappApplication extends BootMixin(
         nested: true,
       },
     };
+
+    this.bind('service.getExternalData').toClass(GetExternalDataService);
   }
 }
