@@ -1,1 +1,1 @@
-# interview_2023
+# Please go through with the interview folder and follow the steps
